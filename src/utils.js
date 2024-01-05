@@ -1,12 +1,10 @@
 // Your code here
-export function isPalindrome(word){
-    let forward = word
-    let reverse = word.split("").reverse().join("")
-    console.log(forward)
-    console.log(reverse)
+export function isPalindrome(word) {
+    let forward = word.toLowerCase()
+    let reverse = forward.split("").reverse().join("")
 
-    if(forward === reverse){
-        return true
+    if (word !== "") {
+        return forward === reverse
     } else {
         return false
     }
