@@ -5,7 +5,7 @@ export function isPalindrome(word) {
 
     if (word !== "") {
         return forward === reverse
-    } else {
-        return false
+    } else if(/^[A-Za-z]+$/.test(word)) {
+        throw new error ("Hey what the fuck?")
     }
 }
